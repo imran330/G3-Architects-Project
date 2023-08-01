@@ -9,49 +9,55 @@ header {
     padding: 20px 200px;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    
+
 }
-nav li{
+
+nav li {
     list-style: none;
 
 }
 
-nav ul a{
+nav ul a {
     text-decoration: none;
     margin-right: 1.25rem;
     color: black;
-    
+
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo-heading a{
+
+.logo-heading a {
     text-decoration: none;
     color: black;
     font-size: 2.5rem;
     font-weight: 900;
 }
-.banner{
+
+.banner {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.banner-heading{
+.banner-heading {
     text-align: center;
     color: black;
     font-weight: 900;
     font-size: 4rem;
 }
-.banner-paragraph{
+
+.banner-paragraph {
     text-align: center;
     color: grey;
 }
-.btn-primary{
+
+.btn-primary {
     color: white;
     background-color: red;
     border: none;
@@ -61,44 +67,87 @@ nav ul a{
     font-weight: 500;
     cursor: pointer;
 }
-.banner-image{
+
+.banner-image {
     margin-top: 2.5rem;
     height: 100%;
     width: 100%;
 }
 
 /* main style */
-main{
+main {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
-.team{
+
+.team {
     display: flex;
-    margin-top: 80px;
-    margin-bottom: 120px;
     align-items: center;
 }
-.team-img{
+
+.team-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
 }
-.team-container{
+
+.team-container {
     padding-left: 2.8rem;
     padding-right: 6rem;
 }
-.team-heading{
+
+.team-heading {
     font-size: 3rem;
 }
-.quick{
+
+.quick {
     color: gray;
     font-weight: 400;
 }
-.our-features{
+
+.our-features {
     color: red;
 }
-.team-description{
+
+.team-description {
     color: gray;
+}
+
+/* Facts section */
+.facts-heading {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.facts-description {
+    color: gray;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-content {
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-heading {
+    font-size: 3rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1.25rem;
+    color: gray;
+    font-weight: 500 ;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -116,19 +165,38 @@ main{
 
 
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    .logo{
+
+    .logo, .team, .card {
         flex-direction: column;
+    }
+    .card{
+        gap: 20px;
+    }
+    .card-content{
+        padding-left: -120px;
+        padding-right: -120px;
+
+    }
+
+    .team-img {
+        grid-template-columns: 1fr;
     }
 }
 
+
 @media screen and (min-width: 576px) and (max-width:960px) {
-    header{
+    header {
         padding: 50px;
     }
-    .logo{
+
+    .logo, .team, .card {
         flex-direction: column;
     }
+    .card{
+        gap: 20px;
+    }
+
 }
