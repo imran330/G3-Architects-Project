@@ -113,6 +113,51 @@ main {
     color: gray;
 }
 
+/* Features section */
+.features{
+    display: flex;
+    margin-top: 80px;
+    gap: 100px;
+}
+.features-heading{
+    font-size: 3rem;
+    font-weight: 900;
+    border-left: 5px solid red;
+    padding-left: 20px;
+}
+.features-p{
+    color: gray;
+}
+.features-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0px rgb(207, 207, 207);
+}
+.experience-btn{
+    background-color: red;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 342px;
+    position: relative;
+    bottom: 100px;
+    right: 60px;
+}
+.experience-btn h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+.experience-btn p{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+
+
+
 /* Facts section */
 .facts-heading {
     font-size: 3rem;
@@ -164,20 +209,11 @@ main {
 .sponsors-icon{
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem;
-    
+    margin-top: 3rem;    
 }
-
-
-
-
-
-
-
-
-
-
-
+.sponsors-icon img{
+    width: 165px;
+}
 
 
 
@@ -186,7 +222,7 @@ main {
         padding: 20px;
     }
 
-    .logo, .team, .card {
+    .logo, .team, .card, .sponsors-icon, .features {
         flex-direction: column;
     }
     .card{
@@ -194,9 +230,25 @@ main {
         padding-left: 40px;
         padding-right: 40px;
     }
+    .sponsors-icon{
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
 
     .team-img {
         grid-template-columns: 1fr;
+    }
+    .features-image img{
+        width: 100%;
+    }
+    .experience-btn{
+        left: 80px;
+    }
+    .features-content{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -206,7 +258,7 @@ main {
         padding: 50px;
     }
 
-    .logo, .team, .card {
+    .logo, .team, .card, .sponsors-icon, .features {
         flex-direction: column;
     }
     .card{
@@ -214,5 +266,24 @@ main {
         padding-left: 40px;
         padding-right: 40px;
     }
+    .sponsors-icon{
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+.sponsors-icon img{
+    width: 100%;
+    height: 100%;
+}
+.features-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.features-image img{
+    width: 100%;
+}
+.experience-btn{
+    left: 180px;
+}
 
 }
